@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.fahim.alyfobserver.app-release-59:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.fahim.alyfobserver.app-main-60:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.fahim.alyfobserver.app-release-59:/mipmap-anydpi-v26_ic_launcher_foreground.xml.flat",
+        "source": "com.fahim.alyfobserver.app-main-60:/mipmap-anydpi-v26/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.fahim.alyfobserver.app-release-59:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.fahim.alyfobserver.app-main-60:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.fahim.alyfobserver.app-release-59:/drawable-v26_ic_launcher_foreground.xml.flat",
+        "source": "com.fahim.alyfobserver.app-main-60:/drawable-v26/ic_launcher_foreground.xml"
+    }
+]
