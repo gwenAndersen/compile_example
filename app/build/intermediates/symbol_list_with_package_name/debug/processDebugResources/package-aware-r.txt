@@ -1,4 +1,4 @@
-com.fahim.alyfobserver
+com.alyf.wlp
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom
@@ -2914,6 +2914,8 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable default_locked_image
+drawable default_unlocked_image
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -3082,6 +3084,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id add_wallpaper_schedule_button
 id alertTitle
 id aligned
 id all
@@ -3105,6 +3108,7 @@ id bottom
 id bounce
 id buttonPanel
 id cancel_button
+id capture_layout_button
 id center
 id centerCrop
 id centerInside
@@ -3130,6 +3134,7 @@ id content
 id contentPanel
 id contiguous
 id coordinator
+id copy_json_button
 id cos
 id counterclockwise
 id cradle
@@ -3141,6 +3146,7 @@ id decelerate
 id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
+id delete_schedule_button
 id deltaRelative
 id design_bottom_sheet
 id design_menu_item_action_area
@@ -3166,6 +3172,7 @@ id easeInOut
 id easeOut
 id edge
 id edit_query
+id edit_schedule_button
 id edit_text_id
 id elastic
 id embed
@@ -3201,6 +3208,7 @@ id graph_wrap
 id group_divider
 id groups
 id header_title
+id hide_graphics_layer_in_inspector_tag
 id hide_ime_id
 id hide_in_inspector_tag
 id hideable
@@ -3225,6 +3233,7 @@ id jumpToEnd
 id jumpToStart
 id labeled
 id layout
+id layout_json_textview
 id left
 id leftToRight
 id legacy
@@ -3374,6 +3383,8 @@ id search_plate
 id search_src_text
 id search_voice_btn
 id select_dialog_listview
+id select_locked_image_button
+id select_unlocked_image_button
 id selected
 id selection_type
 id shortcut
@@ -3469,6 +3480,9 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id wallpaper_preview
+id wallpaper_schedule_list
+id wallpaper_time
 id withText
 id with_icon
 id withinBounds
@@ -3589,6 +3603,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_settings
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3607,6 +3622,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_wallpaper_schedule
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -3773,6 +3789,7 @@ string icon_content_description
 string in_progress
 string indeterminate
 string item_view_role_description
+string lib_name
 string m3_exceed_max_badge_text_suffix
 string m3_ref_typeface_brand_medium
 string m3_ref_typeface_brand_regular
@@ -3876,8 +3893,6 @@ string mtrl_timepicker_cancel
 string mtrl_timepicker_confirm
 string navigation_menu
 string not_selected
-string off
-string on
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
@@ -3894,6 +3909,9 @@ string selected
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string snackbar_dismiss
+string state_empty
+string state_off
+string state_on
 string status_bar_notification_info_overflow
 string suggestions_available
 string switch_role
@@ -3915,6 +3933,7 @@ string tooltip_description
 string tooltip_label
 string tooltip_long_press_label
 string tooltip_pane_description
+string wallpaper_description
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
@@ -5191,3 +5210,5 @@ styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
+xml accessibility_service_config
+xml wallpaper_info
