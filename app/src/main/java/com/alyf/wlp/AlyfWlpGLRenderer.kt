@@ -1,23 +1,34 @@
 package com.alyf.wlp
 
+import android.content.Context
+import android.content.pm.PackageManager
 import android.graphics.Bitmap
+import android.graphics.Canvas
+import android.graphics.drawable.BitmapDrawable
+import android.graphics.drawable.Drawable
 import android.opengl.GLES20
 import android.opengl.GLSurfaceView
 import android.opengl.GLUtils
+import android.opengl.Matrix
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
 import java.nio.FloatBuffer
 import javax.microedition.khronos.egl.EGLConfig
 import javax.microedition.khronos.opengles.GL10
 
-class AlyfWlpGLRenderer : GLSurfaceView.Renderer {
+class AlyfWlpGLRenderer(private val context: Context) : GLSurfaceView.Renderer {
+
+    data class Icon(val iconInfo: IconInfo, val bitmap: Bitmap, var textureId: Int = 0)
+
+    private val icons = mutableListOf<Icon>()
 
     private val vertexShaderCode = """
+        uniform mat4 uMVPMatrix;
         attribute vec4 vPosition;
         attribute vec2 a_texCoord;
         varying vec2 v_texCoord;
         void main() {
-          gl_Position = vPosition;
+          gl_Position = uMVPMatrix * vPosition;
           v_texCoord = a_texCoord;
         }
     """.trimIndent()
@@ -32,10 +43,10 @@ class AlyfWlpGLRenderer : GLSurfaceView.Renderer {
     """.trimIndent()
 
     private val quadVertices = floatArrayOf(
-        -1.0f,  1.0f,  // top left
-        -1.0f, -1.0f,  // bottom left
-         1.0f, -1.0f,  // bottom right
-         1.0f,  1.0f   // top right
+        -0.5f,  0.5f,  // top left
+        -0.5f, -0.5f,  // bottom left
+         0.5f, -0.5f,  // bottom right
+         0.5f,  0.5f   // top right
     )
 
     private val textureCoordinates = floatArrayOf(
@@ -55,23 +66,43 @@ class AlyfWlpGLRenderer : GLSurfaceView.Renderer {
     private var positionHandle: Int = 0
     private var texCoordHandle: Int = 0
     private var textureUniformHandle: Int = 0
-    private var textureId: Int = 0
+    private var mvpMatrixHandle: Int = 0
 
-    private var wallpaperBitmap: Bitmap? = null
+    private val projectionMatrix = FloatArray(16)
+    private val viewMatrix = FloatArray(16)
+    private val mvpMatrix = FloatArray(16)
 
-    fun setWallpaperTexture(bitmap: Bitmap) {
-        wallpaperBitmap = bitmap
+    private var screenWidth = 0
+    private var screenHeight = 0
+
+    fun updateIconLayout(layout: Map<Int, List<IconInfo>>) {
+        icons.clear()
+        val packageManager = context.packageManager
+        for (page in layout.values) {
+            for (iconInfo in page) {
+                try {
+                    val drawable = packageManager.getApplicationIcon(iconInfo.packageName)
+                    val bitmap = drawableToBitmap(drawable)
+                    icons.add(Icon(iconInfo, bitmap))
+                } catch (e: PackageManager.NameNotFoundException) {
+                    // App not found, ignore
+                }
+            }
+        }
     }
 
     override fun onSurfaceCreated(gl: GL10?, config: EGLConfig?) {
         GLES20.glClearColor(0.0f, 0.0f, 0.0f, 1.0f)
         setupBuffers()
         setupShaders()
-        setupTexture()
     }
 
     override fun onSurfaceChanged(gl: GL10?, width: Int, height: Int) {
         GLES20.glViewport(0, 0, width, height)
+        screenWidth = width
+        screenHeight = height
+        val ratio = width.toFloat() / height.toFloat()
+        Matrix.frustumM(projectionMatrix, 0, -ratio, ratio, -1f, 1f, 3f, 7f)
     }
 
     override fun onDrawFrame(gl: GL10?) {
@@ -86,15 +117,34 @@ class AlyfWlpGLRenderer : GLSurfaceView.Renderer {
         GLES20.glVertexAttribPointer(texCoordHandle, 2, GLES20.GL_FLOAT, false, 0, textureBuffer)
 
         GLES20.glActiveTexture(GLES20.GL_TEXTURE0)
-        GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, textureId)
         GLES20.glUniform1i(textureUniformHandle, 0)
 
-        if (wallpaperBitmap != null) {
-            GLUtils.texImage2D(GLES20.GL_TEXTURE_2D, 0, wallpaperBitmap, 0)
-            wallpaperBitmap = null
-        }
+        Matrix.setLookAtM(viewMatrix, 0, 0f, 0f, -3f, 0f, 0f, 0f, 0f, 1.0f, 0.0f)
 
-        GLES20.glDrawElements(GLES20.GL_TRIANGLES, drawOrder.size, GLES20.GL_UNSIGNED_SHORT, drawListBuffer)
+        for (icon in icons) {
+            if (icon.textureId == 0) {
+                icon.textureId = loadTexture(icon.bitmap)
+            }
+            GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, icon.textureId)
+
+            val modelMatrix = FloatArray(16)
+            Matrix.setIdentityM(modelMatrix, 0)
+
+            val x = (icon.iconInfo.boundsInScreen.centerX() / screenWidth.toFloat()) * 2 - 1
+            val y = (icon.iconInfo.boundsInScreen.centerY() / screenHeight.toFloat()) * -2 + 1
+            Matrix.translateM(modelMatrix, 0, x, y, 0f)
+
+            val iconWidth = icon.iconInfo.boundsInScreen.width() / screenWidth.toFloat()
+            val iconHeight = icon.iconInfo.boundsInScreen.height() / screenHeight.toFloat()
+            Matrix.scaleM(modelMatrix, 0, iconWidth, iconHeight, 1f)
+
+            Matrix.multiplyMM(mvpMatrix, 0, viewMatrix, 0, modelMatrix, 0)
+            Matrix.multiplyMM(mvpMatrix, 0, projectionMatrix, 0, mvpMatrix, 0)
+
+            GLES20.glUniformMatrix4fv(mvpMatrixHandle, 1, false, mvpMatrix, 0)
+
+            GLES20.glDrawElements(GLES20.GL_TRIANGLES, drawOrder.size, GLES20.GL_UNSIGNED_SHORT, drawListBuffer)
+        }
 
         GLES20.glDisableVertexAttribArray(positionHandle)
         GLES20.glDisableVertexAttribArray(texCoordHandle)
@@ -132,18 +182,23 @@ class AlyfWlpGLRenderer : GLSurfaceView.Renderer {
         positionHandle = GLES20.glGetAttribLocation(program, "vPosition")
         texCoordHandle = GLES20.glGetAttribLocation(program, "a_texCoord")
         textureUniformHandle = GLES20.glGetUniformLocation(program, "u_texture")
+        mvpMatrixHandle = GLES20.glGetUniformLocation(program, "uMVPMatrix")
     }
 
-    private fun setupTexture() {
+    private fun loadTexture(bitmap: Bitmap): Int {
         val textureIds = IntArray(1)
         GLES20.glGenTextures(1, textureIds, 0)
-        textureId = textureIds[0]
+        val textureId = textureIds[0]
 
         GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, textureId)
         GLES20.glTexParameteri(GLES20.GL_TEXTURE_2D, GLES20.GL_TEXTURE_MIN_FILTER, GLES20.GL_LINEAR)
         GLES20.glTexParameteri(GLES20.GL_TEXTURE_2D, GLES20.GL_TEXTURE_MAG_FILTER, GLES20.GL_LINEAR)
         GLES20.glTexParameteri(GLES20.GL_TEXTURE_2D, GLES20.GL_TEXTURE_WRAP_S, GLES20.GL_CLAMP_TO_EDGE)
         GLES20.glTexParameteri(GLES20.GL_TEXTURE_2D, GLES20.GL_TEXTURE_WRAP_T, GLES20.GL_CLAMP_TO_EDGE)
+        GLUtils.texImage2D(GLES20.GL_TEXTURE_2D, 0, bitmap, 0)
+        bitmap.recycle()
+
+        return textureId
     }
 
     private fun loadShader(type: Int, shaderCode: String): Int {
@@ -151,5 +206,18 @@ class AlyfWlpGLRenderer : GLSurfaceView.Renderer {
         GLES20.glShaderSource(shader, shaderCode)
         GLES20.glCompileShader(shader)
         return shader
+    }
+
+    private fun drawableToBitmap(drawable: Drawable): Bitmap {
+        if (drawable is BitmapDrawable) {
+            return drawable.bitmap
+        }
+
+        val bitmap = Bitmap.createBitmap(drawable.intrinsicWidth, drawable.intrinsicHeight, Bitmap.Config.ARGB_8888)
+        val canvas = Canvas(bitmap)
+        drawable.setBounds(0, 0, canvas.width, canvas.height)
+        drawable.draw(canvas)
+
+        return bitmap
     }
 }
