@@ -6,8 +6,6 @@ color purple_200
 color purple_700
 color teal_200
 color white
-drawable default_locked_image
-drawable default_unlocked_image
 drawable ic_launcher_foreground
 id add_wallpaper_schedule_button
 id capture_layout_button
@@ -15,11 +13,9 @@ id copy_json_button
 id delete_schedule_button
 id edit_schedule_button
 id layout_json_textview
-id select_locked_image_button
-id select_unlocked_image_button
-id wallpaper_preview
+id schedule_image_textview
+id schedule_time_textview
 id wallpaper_schedule_list
-id wallpaper_time
 layout activity_settings
 layout item_wallpaper_schedule
 mipmap ic_launcher

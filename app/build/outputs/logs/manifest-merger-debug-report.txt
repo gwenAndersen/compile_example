@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:1:1-64:12
-INJECTED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:1:1-64:12
-INJECTED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:1:1-64:12
-INJECTED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:1:1-64:12
+ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:1:1-66:12
+INJECTED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:1:1-66:12
+INJECTED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:1:1-66:12
+INJECTED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:1:1-66:12
 MERGED from [com.google.android.material:material:1.12.0] /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/145aaf698f05af71d943682e47856648/transformed/material-1.12.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/3f8b43a7889376bc432ccd7aac199f1a/transformed/constraintlayout-2.0.1/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/719809f3b5190253f7c9df28e36fcefc/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
@@ -104,8 +104,8 @@ ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/And
 	android:name
 		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:3:22-78
 application
-ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:5:5-62:19
-INJECTED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:5:5-62:19
+ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:5:5-64:19
+INJECTED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:5:5-64:19
 MERGED from [com.google.android.material:material:1.12.0] /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/145aaf698f05af71d943682e47856648/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/145aaf698f05af71d943682e47856648/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/3f8b43a7889376bc432ccd7aac199f1a/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
@@ -162,76 +162,54 @@ category#android.intent.category.LAUNCHER
 ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:17:17-77
 	android:name
 		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:17:27-74
-service#com.alyf.wlp.AlyfWlpWallpaperService
-ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:21:9-32:19
-	android:label
-		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:23:13-52
-	android:exported
-		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:25:13-36
-	android:permission
-		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:24:13-67
-	android:name
-		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:22:13-52
-intent-filter#action:name:android.service.wallpaper.WallpaperService
-ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:26:13-28:29
-action#android.service.wallpaper.WallpaperService
-ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:27:17-85
-	android:name
-		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:27:25-82
-meta-data#android.service.wallpaper
-ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:29:13-31:58
-	android:resource
-		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:31:17-55
-	android:name
-		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:30:17-57
 activity#com.alyf.wlp.AlyfWlpSettingsActivity
-ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:34:9-37:39
+ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:36:9-39:39
 	android:label
-		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:36:13-46
+		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:38:13-46
 	android:exported
-		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:37:13-36
+		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:39:13-36
 	android:name
-		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:35:13-52
+		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:37:13-52
 service#com.alyf.wlp.AlyfWlpAccessibilityService
-ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:39:9-50:19
+ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:41:9-52:19
 	android:label
-		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:41:13-70
+		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:43:13-70
 	android:exported
-		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:43:13-36
+		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:45:13-36
 	android:permission
-		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:42:13-79
+		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:44:13-79
 	android:name
-		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:40:13-56
+		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:42:13-56
 intent-filter#action:name:android.accessibilityservice.AccessibilityService
-ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:44:13-46:29
+ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:46:13-48:29
 action#android.accessibilityservice.AccessibilityService
-ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:45:17-92
+ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:47:17-92
 	android:name
-		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:45:25-89
+		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:47:25-89
 meta-data#android.accessibilityservice
-ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:47:13-49:72
+ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:49:13-51:72
 	android:resource
-		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:49:17-69
+		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:51:17-69
 	android:name
-		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:48:17-60
+		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:50:17-60
 receiver#com.alyf.wlp.WallpaperScheduler
-ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:52:9-60:20
+ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:54:9-62:20
 	android:enabled
-		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:54:13-35
+		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:56:13-35
 	android:exported
-		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:55:13-36
+		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:57:13-36
 	android:name
-		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:53:13-47
+		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:55:13-47
 intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.TIME_TICK
-ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:56:13-59:29
+ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:58:13-61:29
 action#android.intent.action.TIME_TICK
-ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:57:17-74
+ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:59:17-74
 	android:name
-		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:57:25-71
+		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:59:25-71
 action#android.intent.action.BOOT_COMPLETED
-ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:58:17-79
+ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:60:17-79
 	android:name
-		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:58:25-76
+		ADDED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml:60:25-76
 uses-sdk
 INJECTED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /data/data/com.termux/files/home/my_project/alyf_wlp/app/src/main/AndroidManifest.xml

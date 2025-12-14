@@ -22,13 +22,8 @@ class WallpaperScheduleAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val schedule = schedules[position]
-        try {
-            holder.wallpaperPreview.setImageURI(schedule.uri)
-        } catch (e: Exception) {
-            e.printStackTrace()
-            // Optionally, set a placeholder image
-        }
-        holder.wallpaperTime.text = String.format("%02d:%02d", schedule.hour, schedule.minute)
+        holder.scheduleImageTextView.text = schedule.uri.toString()
+        holder.scheduleTimeTextView.text = String.format("%02d:%02d", schedule.hour, schedule.minute)
         holder.deleteButton.setOnClickListener { onDeleteClickListener(position) }
         holder.editButton.setOnClickListener { onEditClickListener(position) }
     }
@@ -45,8 +40,8 @@ class WallpaperScheduleAdapter(
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val wallpaperPreview: ImageView = itemView.findViewById(R.id.wallpaper_preview)
-        val wallpaperTime: TextView = itemView.findViewById(R.id.wallpaper_time)
+        val scheduleImageTextView: TextView = itemView.findViewById(R.id.schedule_image_textview)
+        val scheduleTimeTextView: TextView = itemView.findViewById(R.id.schedule_time_textview)
         val deleteButton: Button = itemView.findViewById(R.id.delete_schedule_button)
         val editButton: Button = itemView.findViewById(R.id.edit_schedule_button)
     }

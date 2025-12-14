@@ -18,6 +18,7 @@
             </intent-filter>
         </activity>
 
+        <!--
         <service
             android:name=".AlyfWlpWallpaperService"
             android:label="Alyf WLP Live Wallpaper"
@@ -30,6 +31,7 @@
                 android:name="android.service.wallpaper"
                 android:resource="@xml/wallpaper_info" />
         </service>
+        -->
 
         <activity
             android:name=".AlyfWlpSettingsActivity"

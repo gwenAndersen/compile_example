@@ -2914,8 +2914,6 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
-drawable default_locked_image
-drawable default_unlocked_image
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -3366,6 +3364,8 @@ id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
 id scale
+id schedule_image_textview
+id schedule_time_textview
 id screen
 id scroll
 id scrollIndicatorDown
@@ -3383,8 +3383,6 @@ id search_plate
 id search_src_text
 id search_voice_btn
 id select_dialog_listview
-id select_locked_image_button
-id select_unlocked_image_button
 id selected
 id selection_type
 id shortcut
@@ -3480,9 +3478,7 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
-id wallpaper_preview
 id wallpaper_schedule_list
-id wallpaper_time
 id withText
 id with_icon
 id withinBounds

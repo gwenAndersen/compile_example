@@ -8,20 +8,8 @@
         "source": "/data/data/com.termux/files/home/.gradle/daemon/8.13/com.alyf.wlp.app-main-69:/mipmap-anydpi-v26/ic_launcher_foreground.xml"
     },
     {
-        "merged": "/data/data/com.termux/files/home/.gradle/daemon/8.13/com.alyf.wlp.app-debug-67:/drawable_default_locked_image.xml.flat",
-        "source": "/data/data/com.termux/files/home/.gradle/daemon/8.13/com.alyf.wlp.app-main-69:/drawable/default_locked_image.xml"
-    },
-    {
-        "merged": "/data/data/com.termux/files/home/.gradle/daemon/8.13/com.alyf.wlp.app-debug-67:/layout_activity_settings.xml.flat",
-        "source": "/data/data/com.termux/files/home/.gradle/daemon/8.13/com.alyf.wlp.app-main-69:/layout/activity_settings.xml"
-    },
-    {
         "merged": "com.alyf.wlp.app-debug-67:/layout_item_wallpaper_schedule.xml.flat",
         "source": "com.alyf.wlp.app-main-69:/layout/item_wallpaper_schedule.xml"
-    },
-    {
-        "merged": "/data/data/com.termux/files/home/.gradle/daemon/8.13/com.alyf.wlp.app-debug-67:/layout_item_wallpaper_schedule.xml.flat",
-        "source": "/data/data/com.termux/files/home/.gradle/daemon/8.13/com.alyf.wlp.app-main-69:/layout/item_wallpaper_schedule.xml"
     },
     {
         "merged": "/data/data/com.termux/files/home/.gradle/daemon/8.13/com.alyf.wlp.app-debug-67:/xml_wallpaper_info.xml.flat",
@@ -32,15 +20,15 @@
         "source": "/data/data/com.termux/files/home/.gradle/daemon/8.13/com.alyf.wlp.app-main-69:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "/data/data/com.termux/files/home/.gradle/daemon/8.13/com.alyf.wlp.app-debug-67:/drawable_default_unlocked_image.xml.flat",
-        "source": "/data/data/com.termux/files/home/.gradle/daemon/8.13/com.alyf.wlp.app-main-69:/drawable/default_unlocked_image.xml"
-    },
-    {
         "merged": "/data/data/com.termux/files/home/.gradle/daemon/8.13/com.alyf.wlp.app-debug-67:/xml_accessibility_service_config.xml.flat",
         "source": "/data/data/com.termux/files/home/.gradle/daemon/8.13/com.alyf.wlp.app-main-69:/xml/accessibility_service_config.xml"
     },
     {
         "merged": "/data/data/com.termux/files/home/.gradle/daemon/8.13/com.alyf.wlp.app-debug-67:/drawable-v26_ic_launcher_foreground.xml.flat",
         "source": "/data/data/com.termux/files/home/.gradle/daemon/8.13/com.alyf.wlp.app-main-69:/drawable-v26/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.alyf.wlp.app-debug-67:/layout_activity_settings.xml.flat",
+        "source": "com.alyf.wlp.app-main-69:/layout/activity_settings.xml"
     }
 ]
