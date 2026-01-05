@@ -1,2 +1,31 @@
-/build
-/.gradle
+# IntelliJ / Android Studio
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Gradle
+.gradle/
+build/
+app/build/
+captures/
+
+# Local configuration
+local.properties
+app/local.properties
+
+# Generated files
+*.apk
+*.aab
+*.aar
+*.ap_
+*.dex
+*.class
+*.jar
+*.keystore
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
