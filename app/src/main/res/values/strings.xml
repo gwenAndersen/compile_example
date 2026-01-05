@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">Model</string>
+    <string name="app_name">brief</string>
     <string name="accessibility_service_description">Monitors WhatsApp notifications to forward messages to Telegram.</string>
 </resources>

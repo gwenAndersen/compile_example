@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.compile_example"
+    package="alyf.brief"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -9,10 +9,10 @@
         android:targetSdkVersion="34" />
 
     <permission
-        android:name="com.example.compile_example.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:name="alyf.brief.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.example.compile_example.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <uses-permission android:name="alyf.brief.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
     <uses-permission android:name="moe.shizuku.manager.permission.API_V23" />
 
     <application
@@ -26,7 +26,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TelegramAutomation" >
         <activity
-            android:name="com.example.compile_example.MainActivity"
+            android:name="alyf.brief.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -43,7 +43,7 @@
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.example.compile_example.androidx-startup"
+            android:authorities="alyf.brief.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.emoji2.text.EmojiCompatInitializer"

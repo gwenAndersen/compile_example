@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.fahim.alyfobserver.app-mergeDebugResources-60:/values-be/values-be.xml",
+            "outputFile": "alyf.brief.app-mergeDebugResources-60:/values-be/values-be.xml",
             "map": [
                 {
                     "source": "/data/data/com.termux/files/home/.gradle/caches/8.13/transforms/2c1ee7da16a8564c03eac913a940bf73/transformed/core-1.13.1/res/values-be/values-be.xml",

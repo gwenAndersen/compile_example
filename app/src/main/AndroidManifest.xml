@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TelegramAutomation">
         <activity
-            android:name="com.example.compile_example.MainActivity"
+            android:name="alyf.brief.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace 'com.fahim.alyfobserver'
+    namespace 'alyf.brief'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.compile_example"
+        applicationId "alyf.brief"
         minSdk 26
         targetSdk 34
         versionCode 1

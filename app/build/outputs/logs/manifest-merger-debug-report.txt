@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /data/data/com.termux/files/home/my_project/compile_example/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /data/data/com.termux/files/home/my_project/compile_example/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /data/data/com.termux/files/home/my_project/compile_example/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /data/data/com.termux/files/home/my_project/compile_example/app/src/main/AndroidManifest.xml:2:1-21:12
+ADDED from /data/data/com.termux/files/home/my_project/brief/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /data/data/com.termux/files/home/my_project/brief/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /data/data/com.termux/files/home/my_project/brief/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /data/data/com.termux/files/home/my_project/brief/app/src/main/AndroidManifest.xml:2:1-21:12
 MERGED from [com.google.android.material:material:1.12.0] /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/145aaf698f05af71d943682e47856648/transformed/material-1.12.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/3f8b43a7889376bc432ccd7aac199f1a/transformed/constraintlayout-2.0.1/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/719809f3b5190253f7c9df28e36fcefc/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
@@ -83,16 +83,16 @@ MERGED from [androidx.print:print:1.0.0] /data/data/com.termux/files/home/.gradl
 MERGED from [androidx.arch.core:core-runtime:2.2.0] /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/a2969b4adec23afa360f0832db4638dd/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
 MERGED from [dev.rikka.shizuku:aidl:13.1.5] /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/c2dfb3b683b9ea930b7ae1af9edc4627/transformed/jetified-aidl-13.1.5/AndroidManifest.xml:2:1-7:12
 	package
-		INJECTED from /data/data/com.termux/files/home/my_project/compile_example/app/src/main/AndroidManifest.xml
+		INJECTED from /data/data/com.termux/files/home/my_project/brief/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /data/data/com.termux/files/home/my_project/compile_example/app/src/main/AndroidManifest.xml
+		INJECTED from /data/data/com.termux/files/home/my_project/brief/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /data/data/com.termux/files/home/my_project/compile_example/app/src/main/AndroidManifest.xml
+		INJECTED from /data/data/com.termux/files/home/my_project/brief/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /data/data/com.termux/files/home/my_project/compile_example/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /data/data/com.termux/files/home/my_project/brief/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /data/data/com.termux/files/home/my_project/compile_example/app/src/main/AndroidManifest.xml:4:5-19:19
-INJECTED from /data/data/com.termux/files/home/my_project/compile_example/app/src/main/AndroidManifest.xml:4:5-19:19
+ADDED from /data/data/com.termux/files/home/my_project/brief/app/src/main/AndroidManifest.xml:4:5-19:19
+INJECTED from /data/data/com.termux/files/home/my_project/brief/app/src/main/AndroidManifest.xml:4:5-19:19
 MERGED from [com.google.android.material:material:1.12.0] /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/145aaf698f05af71d943682e47856648/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/145aaf698f05af71d943682e47856648/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/3f8b43a7889376bc432ccd7aac199f1a/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
@@ -116,43 +116,43 @@ MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.te
 MERGED from [androidx.startup:startup-runtime:1.1.1] /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/02dc7e4f03b4ef1db78b42cded2db139/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.startup:startup-runtime:1.1.1] /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/02dc7e4f03b4ef1db78b42cded2db139/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
 	android:extractNativeLibs
-		INJECTED from /data/data/com.termux/files/home/my_project/compile_example/app/src/main/AndroidManifest.xml
+		INJECTED from /data/data/com.termux/files/home/my_project/brief/app/src/main/AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.1] /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/2c1ee7da16a8564c03eac913a940bf73/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /data/data/com.termux/files/home/my_project/compile_example/app/src/main/AndroidManifest.xml:9:9-35
+		ADDED from /data/data/com.termux/files/home/my_project/brief/app/src/main/AndroidManifest.xml:9:9-35
 	android:label
-		ADDED from /data/data/com.termux/files/home/my_project/compile_example/app/src/main/AndroidManifest.xml:7:9-41
+		ADDED from /data/data/com.termux/files/home/my_project/brief/app/src/main/AndroidManifest.xml:7:9-41
 	tools:ignore
 		ADDED from [dev.rikka.shizuku:provider:13.1.5] /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/e7e28f43d3741446cb86a5cb95af41b0/transformed/jetified-provider-13.1.5/AndroidManifest.xml:10:18-69
 	android:roundIcon
-		ADDED from /data/data/com.termux/files/home/my_project/compile_example/app/src/main/AndroidManifest.xml:8:9-54
+		ADDED from /data/data/com.termux/files/home/my_project/brief/app/src/main/AndroidManifest.xml:8:9-54
 	android:icon
-		ADDED from /data/data/com.termux/files/home/my_project/compile_example/app/src/main/AndroidManifest.xml:6:9-43
+		ADDED from /data/data/com.termux/files/home/my_project/brief/app/src/main/AndroidManifest.xml:6:9-43
 	android:allowBackup
-		ADDED from /data/data/com.termux/files/home/my_project/compile_example/app/src/main/AndroidManifest.xml:5:9-35
+		ADDED from /data/data/com.termux/files/home/my_project/brief/app/src/main/AndroidManifest.xml:5:9-35
 	android:theme
-		ADDED from /data/data/com.termux/files/home/my_project/compile_example/app/src/main/AndroidManifest.xml:10:9-56
-activity#com.example.compile_example.MainActivity
-ADDED from /data/data/com.termux/files/home/my_project/compile_example/app/src/main/AndroidManifest.xml:11:9-18:20
+		ADDED from /data/data/com.termux/files/home/my_project/brief/app/src/main/AndroidManifest.xml:10:9-56
+activity#alyf.brief.MainActivity
+ADDED from /data/data/com.termux/files/home/my_project/brief/app/src/main/AndroidManifest.xml:11:9-18:20
 	android:exported
-		ADDED from /data/data/com.termux/files/home/my_project/compile_example/app/src/main/AndroidManifest.xml:13:13-36
+		ADDED from /data/data/com.termux/files/home/my_project/brief/app/src/main/AndroidManifest.xml:13:13-36
 	android:name
-		ADDED from /data/data/com.termux/files/home/my_project/compile_example/app/src/main/AndroidManifest.xml:12:13-68
+		ADDED from /data/data/com.termux/files/home/my_project/brief/app/src/main/AndroidManifest.xml:12:13-51
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /data/data/com.termux/files/home/my_project/compile_example/app/src/main/AndroidManifest.xml:14:13-17:29
+ADDED from /data/data/com.termux/files/home/my_project/brief/app/src/main/AndroidManifest.xml:14:13-17:29
 action#android.intent.action.MAIN
-ADDED from /data/data/com.termux/files/home/my_project/compile_example/app/src/main/AndroidManifest.xml:15:17-69
+ADDED from /data/data/com.termux/files/home/my_project/brief/app/src/main/AndroidManifest.xml:15:17-69
 	android:name
-		ADDED from /data/data/com.termux/files/home/my_project/compile_example/app/src/main/AndroidManifest.xml:15:25-66
+		ADDED from /data/data/com.termux/files/home/my_project/brief/app/src/main/AndroidManifest.xml:15:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /data/data/com.termux/files/home/my_project/compile_example/app/src/main/AndroidManifest.xml:16:17-77
+ADDED from /data/data/com.termux/files/home/my_project/brief/app/src/main/AndroidManifest.xml:16:17-77
 	android:name
-		ADDED from /data/data/com.termux/files/home/my_project/compile_example/app/src/main/AndroidManifest.xml:16:27-74
+		ADDED from /data/data/com.termux/files/home/my_project/brief/app/src/main/AndroidManifest.xml:16:27-74
 uses-sdk
-INJECTED from /data/data/com.termux/files/home/my_project/compile_example/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /data/data/com.termux/files/home/my_project/compile_example/app/src/main/AndroidManifest.xml
-INJECTED from /data/data/com.termux/files/home/my_project/compile_example/app/src/main/AndroidManifest.xml
+INJECTED from /data/data/com.termux/files/home/my_project/brief/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /data/data/com.termux/files/home/my_project/brief/app/src/main/AndroidManifest.xml
+INJECTED from /data/data/com.termux/files/home/my_project/brief/app/src/main/AndroidManifest.xml
 MERGED from [com.google.android.material:material:1.12.0] /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/145aaf698f05af71d943682e47856648/transformed/material-1.12.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.12.0] /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/145aaf698f05af71d943682e47856648/transformed/material-1.12.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/3f8b43a7889376bc432ccd7aac199f1a/transformed/constraintlayout-2.0.1/AndroidManifest.xml:5:5-7:41
@@ -310,9 +310,9 @@ MERGED from [androidx.arch.core:core-runtime:2.2.0] /data/data/com.termux/files/
 MERGED from [dev.rikka.shizuku:aidl:13.1.5] /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/c2dfb3b683b9ea930b7ae1af9edc4627/transformed/jetified-aidl-13.1.5/AndroidManifest.xml:5:5-44
 MERGED from [dev.rikka.shizuku:aidl:13.1.5] /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/c2dfb3b683b9ea930b7ae1af9edc4627/transformed/jetified-aidl-13.1.5/AndroidManifest.xml:5:5-44
 	android:targetSdkVersion
-		INJECTED from /data/data/com.termux/files/home/my_project/compile_example/app/src/main/AndroidManifest.xml
+		INJECTED from /data/data/com.termux/files/home/my_project/brief/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /data/data/com.termux/files/home/my_project/compile_example/app/src/main/AndroidManifest.xml
+		INJECTED from /data/data/com.termux/files/home/my_project/brief/app/src/main/AndroidManifest.xml
 activity#androidx.activity.ComponentActivity
 ADDED from [androidx.compose.ui:ui-test-manifest:1.6.0] /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/72bdc34427531e7b0c8a8d4a2b29daec/transformed/jetified-ui-test-manifest-1.6.0/AndroidManifest.xml:23:9-25:39
 	android:exported
@@ -359,7 +359,7 @@ ADDED from [androidx.core:core:1.13.1] /data/data/com.termux/files/home/.gradle/
 		ADDED from [androidx.core:core:1.13.1] /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/2c1ee7da16a8564c03eac913a940bf73/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
 	android:name
 		ADDED from [androidx.core:core:1.13.1] /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/2c1ee7da16a8564c03eac913a940bf73/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
-permission#com.example.compile_example.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+permission#alyf.brief.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.13.1] /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/2c1ee7da16a8564c03eac913a940bf73/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
 		ADDED from [androidx.core:core:1.13.1] /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/2c1ee7da16a8564c03eac913a940bf73/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
@@ -369,7 +369,7 @@ uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.13.1] /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/2c1ee7da16a8564c03eac913a940bf73/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
 	android:name
 		ADDED from [androidx.core:core:1.13.1] /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/2c1ee7da16a8564c03eac913a940bf73/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
-uses-permission#com.example.compile_example.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+uses-permission#alyf.brief.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.13.1] /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/2c1ee7da16a8564c03eac913a940bf73/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
 	android:name
 		ADDED from [androidx.core:core:1.13.1] /data/data/com.termux/files/home/.gradle/caches/8.13/transforms/2c1ee7da16a8564c03eac913a940bf73/transformed/core-1.13.1/AndroidManifest.xml:26:22-94

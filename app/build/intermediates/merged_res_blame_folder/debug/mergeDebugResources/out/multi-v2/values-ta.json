@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.fahim.alyfobserver.app-mergeDebugResources-60:/values-ta/values-ta.xml",
+            "outputFile": "alyf.brief.app-mergeDebugResources-60:/values-ta/values-ta.xml",
             "map": [
                 {
                     "source": "/data/data/com.termux/files/home/.gradle/caches/8.13/transforms/44fb1f1399c804fff7e976b177ee7f46/transformed/jetified-material3-1.1.1/res/values-ta/values-ta.xml",

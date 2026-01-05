@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.fahim.alyfobserver.app-mergeDebugResources-60:/values-v31/values-v31.xml",
+            "outputFile": "alyf.brief.app-mergeDebugResources-60:/values-v31/values-v31.xml",
             "map": [
                 {
-                    "source": "/data/data/com.termux/files/home/my_project/compile_example/app/src/main/res/values-v31/themes.xml",
+                    "source": "/data/data/com.termux/files/home/my_project/brief/app/src/main/res/values-v31/themes.xml",
                     "from": {
                         "startLines": "3",
                         "startColumns": "4",

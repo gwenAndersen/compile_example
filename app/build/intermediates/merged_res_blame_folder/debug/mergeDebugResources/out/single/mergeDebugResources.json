@@ -1,18 +1,18 @@
 [
     {
-        "merged": "com.fahim.alyfobserver.app-debug-62:/mipmap-anydpi-v26_ic_launcher_foreground.xml.flat",
-        "source": "com.fahim.alyfobserver.app-main-64:/mipmap-anydpi-v26/ic_launcher_foreground.xml"
+        "merged": "alyf.brief.app-debug-62:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "alyf.brief.app-main-64:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "com.fahim.alyfobserver.app-debug-62:/drawable-v26_ic_launcher_foreground.xml.flat",
-        "source": "com.fahim.alyfobserver.app-main-64:/drawable-v26/ic_launcher_foreground.xml"
+        "merged": "alyf.brief.app-debug-62:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "alyf.brief.app-main-64:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "com.fahim.alyfobserver.app-debug-62:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.fahim.alyfobserver.app-main-64:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "alyf.brief.app-debug-62:/drawable-v26_ic_launcher_foreground.xml.flat",
+        "source": "alyf.brief.app-main-64:/drawable-v26/ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.fahim.alyfobserver.app-debug-62:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.fahim.alyfobserver.app-main-64:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "alyf.brief.app-debug-62:/mipmap-anydpi-v26_ic_launcher_foreground.xml.flat",
+        "source": "alyf.brief.app-main-64:/mipmap-anydpi-v26/ic_launcher_foreground.xml"
     }
 ]

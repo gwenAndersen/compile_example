@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.fahim.alyfobserver.app-mergeDebugResources-60:/values-en-rIN/values-en-rIN.xml",
+            "outputFile": "alyf.brief.app-mergeDebugResources-60:/values-en-rIN/values-en-rIN.xml",
             "map": [
                 {
                     "source": "/data/data/com.termux/files/home/.gradle/caches/8.13/transforms/78361c5b3e00531ce339e3d232665041/transformed/jetified-foundation-release/res/values-en-rIN/values-en-rIN.xml",
